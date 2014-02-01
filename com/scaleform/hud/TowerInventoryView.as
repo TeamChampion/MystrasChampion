@@ -168,6 +168,7 @@ public class TowerInventoryView extends BaseClickInventory
 				return super.viewExplanationData[i];
 			}
 		}
+		return "";
 	}
 }
 }
