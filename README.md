@@ -1,4 +1,4 @@
-MystrasChampion
-===============
+Flash
+=====
 
-Flash Content Folder
+Mystra's Champion Flash files
