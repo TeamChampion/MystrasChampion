@@ -9,6 +9,7 @@
 	import flash.events.TimerEvent;
 	import flash.utils.*;
 	import flash.display.SimpleButton;
+	import flash.system.fscommand;
 
 public class MakeScenario 
 {
@@ -379,8 +380,8 @@ public class MakeScenario
 	{
 		switch(num)
 		{
-			case 1 : trace("chapter1-1end"); break;
-			case 2 : trace("chapter1-2end"); break;
+			case 1 : trace("chapter1-1end"); fscommand("chapter1-1end"); break;
+			case 2 : trace("chapter1-2end"); fscommand("chapter1-2end"); break;
 			case 3 : trace("chapter1-3end"); break;
 			case 4 : trace("chapter2-1end"); break;
 			case 5 : trace("chapter2-2end"); break;
@@ -421,8 +422,8 @@ public class MakeScenario
 			buttonAlpha0 = true;
 			this.wordNum = this.word.length - 2;
 			
-			this.fadeOut();
-			var timer:Timer = new Timer(1200,1);
+			//this.fadeOut();
+			/*var timer:Timer = new Timer(1200,1);
 			timer.addEventListener(TimerEvent.TIMER_COMPLETE,
 			// タイマー終了後会話を続けられるようにする
 			function (e:TimerEvent):void
@@ -434,6 +435,8 @@ public class MakeScenario
 				}  
 			});
 			timer.start();
+			*/
+			endEvent(this.scenarioNumber);
 				
 		}
 	}
