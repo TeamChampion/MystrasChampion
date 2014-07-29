@@ -2,11 +2,11 @@
 {
 public class PlayerData
 {
-	// 武器のインベントリー
+	// 武器のインベントリー		Set My Inventory in here
 	private var weaponInv:Array = [0,1,2,3];
 	
 	// アクセサリーのインベントリー
-	private var accessoryInv:Array = [4,5,6,7];
+	private var accessoryInv:Array = [0,0,0,1];
 	
 	// エンチャントのインベントリー
 	private var enchantInv:Array = [8,9,10,11,12];
